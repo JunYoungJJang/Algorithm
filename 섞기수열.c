@@ -36,10 +36,10 @@ int main(void)
 		}
 	} 
 
-	for(i=1; ; i++) {
+	for(i=1; ; i++) {   // 최소 공배수 구하기
 		temp = 1;
 		for(j=0; j<cnt; j++) {
-			if((max*i) % min_table[j]) {
+			if((max*i) % min_table[j]) {   // 2. 모든 수로 나누어 떨어지는지 확인
 				temp = 0;
 				break;
 			}
